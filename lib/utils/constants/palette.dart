@@ -1,5 +1,3 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 
 class Palette {
@@ -21,7 +19,7 @@ class Palette {
 
   // Background Container colors
   static const Color lightContainer = Color(0xFFF6F6F6);
-  static Color darkContainer = Palette.white.withOpacity(0.1);
+  static Color darkContainer = Palette.white.withValues(alpha: 0.1);
 
   // Button colors
   static const Color buttonPrimary = Color(0xFFE61B32);

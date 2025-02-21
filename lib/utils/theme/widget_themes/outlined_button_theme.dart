@@ -4,8 +4,8 @@ import '../../constants/palette.dart';
 import '../../constants/sizes.dart';
 
 /* -- Light & Dark Outlined Button Themes -- */
-class CarterOutlinedButtonTheme {
-  CarterOutlinedButtonTheme._(); //To avoid creating instances
+class TOutlinedButtonTheme {
+  TOutlinedButtonTheme._(); //To avoid creating instances
 
 
   /* -- Light Theme -- */

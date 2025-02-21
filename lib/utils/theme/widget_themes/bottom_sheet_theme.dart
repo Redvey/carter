@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../constants/palette.dart';
 
-class CarterBottomSheetTheme {
-  CarterBottomSheetTheme._();
+class TBottomSheetTheme {
+  TBottomSheetTheme._();
 
   static BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,

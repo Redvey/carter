@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../constants/palette.dart';
 import '../../constants/sizes.dart';
 
-class CarterAppBarTheme{
-  CarterAppBarTheme._();
+class TAppBarTheme{
+  TAppBarTheme._();
 
   static const lightAppBarTheme = AppBarTheme(
     elevation: 0,

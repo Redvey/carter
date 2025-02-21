@@ -1,11 +1,9 @@
-// ignore_for_file: deprecated_member_use
-
 import 'package:flutter/material.dart';
 import '../../constants/palette.dart';
 import '../../constants/sizes.dart';
 
-class CarterTextFormFieldTheme {
-  CarterTextFormFieldTheme._();
+class TTextFormFieldTheme {
+  TTextFormFieldTheme._();
 
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
@@ -15,7 +13,7 @@ class CarterTextFormFieldTheme {
     labelStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeMd, color: Palette.black),
     hintStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeSm, color: Palette.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle: const TextStyle().copyWith(color: Palette.black.withGreen(1)),
+    floatingLabelStyle: const TextStyle().copyWith(color: Palette.black.withValues(alpha: 0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: Palette.grey),
@@ -45,7 +43,7 @@ class CarterTextFormFieldTheme {
     // constraints: const BoxConstraints.expand(height: TSizes.inputFieldHeight),
     labelStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeMd, color: Palette.white),
     hintStyle: const TextStyle().copyWith(fontSize: TSizes.fontSizeSm, color: Palette.white),
-    floatingLabelStyle: const TextStyle().copyWith(color: Palette.white.withOpacity(0.8)),
+    floatingLabelStyle: const TextStyle().copyWith(color: Palette.white.withValues(alpha: 0.8)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(TSizes.inputFieldRadius),
       borderSide: const BorderSide(width: 1, color: Palette.darkGrey),
