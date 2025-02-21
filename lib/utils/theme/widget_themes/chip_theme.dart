@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 import '../../constants/palette.dart';
 
-class TChipTheme {
-  TChipTheme._();
+class CarterChipTheme {
+  CarterChipTheme._();
 
   static ChipThemeData lightChipTheme = ChipThemeData(
     disabledColor: Palette.grey.withOpacity(0.4),

@@ -3,8 +3,8 @@ import '../../constants/palette.dart';
 import '../../constants/sizes.dart';
 
 /// Custom Class for Light & Dark Text Themes
-class TCheckboxTheme {
-  TCheckboxTheme._(); // To avoid creating instances
+class CarterCheckboxTheme {
+  CarterCheckboxTheme._(); // To avoid creating instances
 
   /// Customizable Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
