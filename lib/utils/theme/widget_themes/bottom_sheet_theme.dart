@@ -7,16 +7,16 @@ class CarterBottomSheetTheme {
 
   static BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: Palette.white,
-    modalBackgroundColor: Palette.white,
+    backgroundColor: CarterPalette.white,
+    modalBackgroundColor: CarterPalette.white,
     constraints: const BoxConstraints(minWidth: double.infinity),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );
 
   static BottomSheetThemeData darkBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: Palette.black,
-    modalBackgroundColor: Palette.black,
+    backgroundColor: CarterPalette.black,
+    modalBackgroundColor: CarterPalette.black,
     constraints: const BoxConstraints(minWidth: double.infinity),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );

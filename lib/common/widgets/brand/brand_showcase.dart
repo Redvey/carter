@@ -17,7 +17,7 @@ class EBrandShowCase extends StatelessWidget {
     return CircularCont(
       showBorder: true,
       backgroundColor: Colors.transparent,
-      borderColor: Palette.darkGrey,
+      borderColor: CarterPalette.darkGrey,
       margin:
       const EdgeInsets.only(bottom: CarterSizes.spaceBtwItems),
       padding: const EdgeInsets.all(CarterSizes.md),
@@ -44,9 +44,9 @@ class EBrandShowCase extends StatelessWidget {
       child: CircularCont(
         height: 100,
         backgroundColor:
-        EHelperFunctions.isDarkMode(context)
-            ? Palette.darkGrey
-            : Palette.light,
+        CarterHelperFunctions.isDarkMode(context)
+            ? CarterPalette.darkGrey
+            : CarterPalette.light,
         margin:
         const EdgeInsets.only(right: CarterSizes.sm),
         padding: const EdgeInsets.all(CarterSizes.md),

@@ -13,14 +13,14 @@ class CarterTabBar extends StatelessWidget implements PreferredSizeWidget{
 
   @override
   Widget build(BuildContext context) {
-    final dark= EHelperFunctions.isDarkMode(context);
+    final dark= CarterHelperFunctions.isDarkMode(context);
     return Material(
-      color: dark? Palette.black : Palette.white,
+      color: dark? CarterPalette.black : CarterPalette.white,
       child: TabBar(
         isScrollable: true,
-        indicatorColor: Palette.primary,
-        labelColor: EHelperFunctions.isDarkMode(context)?Palette.white:Palette.primary,
-        unselectedLabelColor: Palette.darkGrey,
+        indicatorColor: CarterPalette.primary,
+        labelColor: CarterHelperFunctions.isDarkMode(context)?CarterPalette.white:CarterPalette.primary,
+        unselectedLabelColor: CarterPalette.darkGrey,
         tabs: tabs,
       ),
     );
@@ -28,6 +28,6 @@ class CarterTabBar extends StatelessWidget implements PreferredSizeWidget{
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(EDeviceUtils.getAppBarHeight());
+  Size get preferredSize => Size.fromHeight(CarterDeviceUtils.getAppBarHeight());
 }
 

@@ -29,9 +29,9 @@ class ECircularIcon extends StatelessWidget {
       decoration: BoxDecoration(
           color: backgroundColor != null
               ? backgroundColor!
-              : EHelperFunctions.isDarkMode(context)
-                  ? Palette.black.withOpacity(0.9)
-                  : Palette.white.withOpacity(0.9),
+              : CarterHelperFunctions.isDarkMode(context)
+                  ? CarterPalette.black.withOpacity(0.9)
+                  : CarterPalette.white.withOpacity(0.9),
           borderRadius: BorderRadius.circular(100)),
       child: IconButton(
         onPressed: onPressed,

@@ -41,7 +41,7 @@ class EBrandTitleWithVerifiedIcon extends StatelessWidget {
         ),
         Icon(
           Iconsax.verify5,
-          color: Palette.primary,
+          color: CarterPalette.primary,
           size: CarterSizes.iconXs,
         )
       ],

@@ -30,16 +30,16 @@ class ECircularImage extends StatelessWidget {
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: EHelperFunctions.isDarkMode(context)
-            ? Palette.black
-            : Palette.white,
+        color: CarterHelperFunctions.isDarkMode(context)
+            ? CarterPalette.black
+            : CarterPalette.white,
         borderRadius: BorderRadius.circular(100),
       ),
       child: Image(
         image: isNetworkImage? NetworkImage(image):AssetImage(image) as ImageProvider,
-        color: EHelperFunctions.isDarkMode(context)
-            ? Palette.white
-            : Palette.black,
+        color: CarterHelperFunctions.isDarkMode(context)
+            ? CarterPalette.white
+            : CarterPalette.black,
       ),
     );
   }

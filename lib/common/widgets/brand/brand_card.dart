@@ -30,12 +30,12 @@ class EBrandCard extends StatelessWidget {
             ///Icon
             Flexible(
               child: ECircularImage(
-                image: EMages.clothIcon,
+                image: CarterImg.clothIcon,
                 isNetworkImage: false,
                 backgroundColor: Colors.transparent,
-                overlayColor: EHelperFunctions.isDarkMode(context)
-                    ? Palette.white
-                    : Palette.black,
+                overlayColor: CarterHelperFunctions.isDarkMode(context)
+                    ? CarterPalette.white
+                    : CarterPalette.black,
               ),
             ),
             const SizedBox(

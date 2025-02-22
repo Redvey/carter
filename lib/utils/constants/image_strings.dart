@@ -2,7 +2,7 @@
 /* -- App Image Strings -- */
 
 /// This class contains all the App Images in String formats.
-class EMages{
+class CarterImg{
 
   // -- App Logos
   static const String darkAppLogo = "assets/logos/Group 4.png";

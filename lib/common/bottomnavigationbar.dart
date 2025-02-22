@@ -18,7 +18,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
   @override
   Widget build(BuildContext context) {
     final controller =Get.put(NavigationController());
-    final darkMode = EHelperFunctions.isDarkMode(context);
+    final darkMode = CarterHelperFunctions.isDarkMode(context);
 
     return Scaffold(
       bottomNavigationBar: Obx(
@@ -27,8 +27,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
           elevation: 0,
           selectedIndex: controller.selectedIndex.value,
           onDestinationSelected: (index)=> controller.selectedIndex.value = index,
-          backgroundColor: darkMode? Palette.black:Palette.white,
-          indicatorColor: darkMode? Palette.white.withOpacity(0.1):Palette.black.withOpacity(0.1),
+          backgroundColor: darkMode? CarterPalette.black:CarterPalette.white,
+          indicatorColor: darkMode? CarterPalette.white.withOpacity(0.1):CarterPalette.black.withOpacity(0.1),
           destinations: [
             NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
             NavigationDestination(icon: Icon(Iconsax.shop), label: 'Store'),

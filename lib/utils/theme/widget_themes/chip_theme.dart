@@ -5,18 +5,18 @@ class CarterChipTheme {
   CarterChipTheme._();
 
   static ChipThemeData lightChipTheme = ChipThemeData(
-    disabledColor: Palette.grey.withValues(alpha: 0.4),
-    labelStyle: const TextStyle(color: Palette.black),
-    selectedColor: Palette.primary,
+    disabledColor: CarterPalette.grey.withValues(alpha: 0.4),
+    labelStyle: const TextStyle(color: CarterPalette.black),
+    selectedColor: CarterPalette.primary,
     padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-    checkmarkColor: Palette.white,
+    checkmarkColor: CarterPalette.white,
   );
 
   static ChipThemeData darkChipTheme = const ChipThemeData(
-    disabledColor: Palette.darkerGrey,
-    labelStyle: TextStyle(color: Palette.white),
-    selectedColor: Palette.primary,
+    disabledColor: CarterPalette.darkerGrey,
+    labelStyle: TextStyle(color: CarterPalette.white),
+    selectedColor: CarterPalette.primary,
     padding: EdgeInsets.symmetric(horizontal: 12.0, vertical: 12),
-    checkmarkColor: Palette.white,
+    checkmarkColor: CarterPalette.white,
   );
 }

@@ -12,9 +12,9 @@ class CarterAppBarTheme{
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Palette.black, size: CarterSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: Palette.black, size: CarterSizes.iconMd),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: Palette.black),
+    iconTheme: IconThemeData(color: CarterPalette.black, size: CarterSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: CarterPalette.black, size: CarterSizes.iconMd),
+    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: CarterPalette.black),
   );
   static const darkAppBarTheme = AppBarTheme(
     elevation: 0,
@@ -22,8 +22,8 @@ class CarterAppBarTheme{
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Palette.black, size: CarterSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: Palette.white, size: CarterSizes.iconMd),
-    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: Palette.white),
+    iconTheme: IconThemeData(color: CarterPalette.black, size: CarterSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: CarterPalette.white, size: CarterSizes.iconMd),
+    titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: CarterPalette.white),
   );
 }

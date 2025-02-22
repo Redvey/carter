@@ -12,9 +12,9 @@ class CircularCont extends StatelessWidget {
     this.margin,
     this.padding,
     this.child,
-    this.backgroundColor = Palette.white,
+    this.backgroundColor = CarterPalette.white,
     this.radius = CarterSizes.cardRadiusLg,
-    this.borderColor = Palette.borderPrimary,
+    this.borderColor = CarterPalette.borderPrimary,
     this.showBorder = false,
   });
 

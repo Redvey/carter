@@ -23,14 +23,14 @@ class ECategoryTab extends StatelessWidget {
             children: [
               ///Brands
               EBrandShowCase(images: [
-                EMages.productImage1,
-                EMages.productImage2,
-                EMages.productImage3,
+                CarterImg.productImage1,
+                CarterImg.productImage2,
+                CarterImg.productImage3,
               ],),
               EBrandShowCase(images: [
-                EMages.productImage1,
-                EMages.productImage2,
-                EMages.productImage3,
+                CarterImg.productImage1,
+                CarterImg.productImage2,
+                CarterImg.productImage3,
               ],),
               const SizedBox(height: CarterSizes.spaceBtwItems,),
 

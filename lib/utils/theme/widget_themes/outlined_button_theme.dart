@@ -12,9 +12,9 @@ class CarterOutlinedButtonTheme {
   static final lightOutlinedButtonTheme  = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Palette.dark,
-      side: const BorderSide(color: Palette.borderPrimary),
-      textStyle: const TextStyle(fontSize: 16, color: Palette.black, fontWeight: FontWeight.w600),
+      foregroundColor: CarterPalette.dark,
+      side: const BorderSide(color: CarterPalette.borderPrimary),
+      textStyle: const TextStyle(fontSize: 16, color: CarterPalette.black, fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),
@@ -23,9 +23,9 @@ class CarterOutlinedButtonTheme {
   /* -- Dark Theme -- */
   static final darkOutlinedButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
-      foregroundColor: Palette.light,
-      side: const BorderSide(color: Palette.borderPrimary),
-      textStyle: const TextStyle(fontSize: 16, color: Palette.textWhite, fontWeight: FontWeight.w600),
+      foregroundColor: CarterPalette.light,
+      side: const BorderSide(color: CarterPalette.borderPrimary),
+      textStyle: const TextStyle(fontSize: 16, color: CarterPalette.textWhite, fontWeight: FontWeight.w600),
       padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight, horizontal: 20),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),

@@ -10,7 +10,7 @@ class EverticalImageText extends StatelessWidget {
     super.key,
     required this.image,
     required this.title,
-    this.textColor = Palette.white,
+    this.textColor = CarterPalette.white,
     this.onTap,
     this.backgroundColor,
   });
@@ -22,7 +22,7 @@ class EverticalImageText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark= EHelperFunctions.isDarkMode(context);
+    final dark= CarterHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
       onTap: onTap,
@@ -36,14 +36,14 @@ class EverticalImageText extends StatelessWidget {
               height: 56,
               padding: const EdgeInsets.all(CarterSizes.sm),
               decoration: BoxDecoration(
-                color: backgroundColor ?? (dark ? Palette.black:Palette.white),
+                color: backgroundColor ?? (dark ? CarterPalette.black:CarterPalette.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
                 child: Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: dark? Palette.light:Palette.dark ,
+                  color: dark? CarterPalette.light:CarterPalette.dark ,
                 ),
               ),
             ),

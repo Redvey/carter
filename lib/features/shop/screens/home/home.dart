@@ -48,7 +48,7 @@ class AppHome extends StatelessWidget {
                       ESectionHeading(
                         title: 'Popular Categories',
                         showActionButton: false,
-                        textColor: Palette.white,
+                        textColor: CarterPalette.white,
                       ),
                       const SizedBox(
                         height: CarterSizes.spaceBtwItems,
@@ -68,9 +68,9 @@ class AppHome extends StatelessWidget {
                   ///PromoSlider
                   CarterPromoSilder(
                     banners: [
-                      EMages.promoBanner1,
-                      EMages.promoBanner2,
-                      EMages.promoBanner3
+                      CarterImg.promoBanner1,
+                      CarterImg.promoBanner2,
+                      CarterImg.promoBanner3
                     ],
                   ),
                   SizedBox(

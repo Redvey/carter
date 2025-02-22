@@ -17,23 +17,23 @@ class CarterHomeAppBar extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            ETexts.homeAppbarTitle,
+            CarterTexts.homeAppbarTitle,
             style: Theme.of(context)
                 .textTheme
                 .labelMedium!
-                .apply(color: Palette.grey),
+                .apply(color: CarterPalette.grey),
           ),
           Text(
-            ETexts.homeAppbarSubTitle,
+            CarterTexts.homeAppbarSubTitle,
             style: Theme.of(context)
                 .textTheme
                 .headlineSmall!
-                .apply(color: Palette.white),
+                .apply(color: CarterPalette.white),
           ),
         ],
       ),
       actions: [
-        ECartCounterIcon(onPressed: () {  }, iconColor: Palette.white,)
+        ECartCounterIcon(onPressed: () {  }, iconColor: CarterPalette.white,)
       ],
     );
   }

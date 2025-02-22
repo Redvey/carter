@@ -18,7 +18,7 @@ class CarterProductCardVertical extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = EHelperFunctions.isDarkMode(context);
+    final dark = CarterHelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: () {},
       child: Container(
@@ -27,7 +27,7 @@ class CarterProductCardVertical extends StatelessWidget {
         decoration: BoxDecoration(
           boxShadow: [CarterShadowStyle.verticalProductShadow],
           borderRadius: BorderRadius.circular(CarterSizes.productImageRadius),
-          color: dark ? Palette.darkerGrey : Palette.white,
+          color: dark ? CarterPalette.darkerGrey : CarterPalette.white,
         ),
         child: Column(
           children: [
@@ -35,12 +35,12 @@ class CarterProductCardVertical extends StatelessWidget {
             CircularCont(
               height: 180,
               padding: const EdgeInsets.all(CarterSizes.sm),
-              backgroundColor: dark ? Palette.dark : Palette.light,
+              backgroundColor: dark ? CarterPalette.dark : CarterPalette.light,
               child: Stack(
                 children: [
                   ///Thumbnai Image
                   ERoundedImage(
-                    imageUrl: EMages.productImage1,
+                    imageUrl: CarterImg.productImage1,
                     applyImageRadius: true,
                   ),
 
@@ -49,7 +49,7 @@ class CarterProductCardVertical extends StatelessWidget {
                     top: 12,
                     child: CircularCont(
                       radius: CarterSizes.sm,
-                      backgroundColor: Palette.secondary.withValues(alpha: 0.8),
+                      backgroundColor: CarterPalette.secondary.withValues(alpha: 0.8),
                       padding: const EdgeInsets.symmetric(
                           horizontal: CarterSizes.sm, vertical: CarterSizes.xs),
                       child: Text(
@@ -57,7 +57,7 @@ class CarterProductCardVertical extends StatelessWidget {
                         style: Theme.of(context)
                             .textTheme
                             .labelLarge!
-                            .apply(color: Palette.black),
+                            .apply(color: CarterPalette.black),
                       ),
                     ),
                   ),
@@ -107,7 +107,7 @@ class CarterProductCardVertical extends StatelessWidget {
                 ),
                 Container(
                   decoration: BoxDecoration(
-                      color: Palette.dark,
+                      color: CarterPalette.dark,
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(CarterSizes.cardRadiusMd),
                           bottomRight: Radius.circular(
@@ -118,7 +118,7 @@ class CarterProductCardVertical extends StatelessWidget {
                       child: Center(
                           child: const Icon(
                             Iconsax.add,
-                            color: Palette.white,
+                            color: CarterPalette.white,
                           ))),
                 )
               ],

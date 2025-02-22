@@ -45,7 +45,7 @@ class CarterPromoSilder extends StatelessWidget {
                     width: 20,
                     height: 4,
                     margin: EdgeInsets.only(right: 10),
-                    backgroundColor: controller.carouselCurrentIndex.value==i ? Palette.primary: Palette.grey,),
+                    backgroundColor: controller.carouselCurrentIndex.value==i ? CarterPalette.primary: CarterPalette.grey,),
               ],
             ),
           ),

@@ -27,7 +27,7 @@ class SuccessScreen extends StatelessWidget {
               Center(
                 child: Image(
                   image: AssetImage(image),
-                  width: EHelperFunctions.screenWidth() * 0.6,
+                  width: CarterHelperFunctions.screenWidth() * 0.6,
                 ),
               ),
               const SizedBox(
@@ -57,7 +57,7 @@ class SuccessScreen extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  child: const Text(ETexts.tContinue),
+                  child: const Text(CarterTexts.tContinue),
                 ),
               ),
             ],

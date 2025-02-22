@@ -37,5 +37,5 @@ class CarterAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(EDeviceUtils.getAppBarHeight());
+  Size get preferredSize => Size.fromHeight(CarterDeviceUtils.getAppBarHeight());
 }

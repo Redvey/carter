@@ -20,17 +20,17 @@ class LogoTitleSection extends StatelessWidget {
         Image(
             height: 150,
             image: dark
-                ? AssetImage(EMages.lightAppLogo)
-                : AssetImage(EMages.darkAppLogo)),
+                ? AssetImage(CarterImg.lightAppLogo)
+                : AssetImage(CarterImg.darkAppLogo)),
         Text(
-          ETexts.loginTitle,
+          CarterTexts.loginTitle,
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         const SizedBox(
           height: CarterSizes.sm,
         ),
         Text(
-          ETexts.loginSubTitle,
+          CarterTexts.loginSubTitle,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
       ],

@@ -25,24 +25,24 @@ class ESearchBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = EHelperFunctions.isDarkMode(context);
+    final dark = CarterHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
       onTap: onTap,
       child: Padding(
         padding: padding,
         child: Container(
-          width: EDeviceUtils.getScreenWidth(context),
+          width: CarterDeviceUtils.getScreenWidth(context),
           padding: const EdgeInsets.all(CarterSizes.md),
           decoration: BoxDecoration(
-              color: showBackgroundColor?dark? Palette.dark:Palette.light:Colors.transparent,
+              color: showBackgroundColor?dark? CarterPalette.dark:CarterPalette.light:Colors.transparent,
               borderRadius: BorderRadius.circular(CarterSizes.cardRadiusLg),
-              border: showBorder? Border.all(color: Palette.grey):null),
+              border: showBorder? Border.all(color: CarterPalette.grey):null),
           child: Row(
             children: [
               Icon(
                 icon,
-                color: Palette.darkGrey,
+                color: CarterPalette.darkGrey,
               ),
               const SizedBox(
                 width: CarterSizes.spaceBtwItems,

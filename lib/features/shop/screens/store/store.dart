@@ -36,9 +36,9 @@ class AppStore extends StatelessWidget {
                 SliverAppBar(
                   pinned: true,
                   floating: true,
-                  backgroundColor: EHelperFunctions.isDarkMode(context)
-                      ? Palette.black
-                      : Palette.white,
+                  backgroundColor: CarterHelperFunctions.isDarkMode(context)
+                      ? CarterPalette.black
+                      : CarterPalette.white,
                   expandedHeight: 440,
                   automaticallyImplyLeading: false,
                   flexibleSpace: Padding(

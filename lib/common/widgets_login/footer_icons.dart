@@ -14,7 +14,7 @@ class FooterIcons extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: Palette.grey),
+            border: Border.all(color: CarterPalette.grey),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
@@ -22,13 +22,13 @@ class FooterIcons extends StatelessWidget {
             icon: const Image(
                 width: CarterSizes.iconMd,
                 height: CarterSizes.iconMd,
-                image: AssetImage(EMages.google)),
+                image: AssetImage(CarterImg.google)),
           ),
         ),
         const SizedBox(width: CarterSizes.spaceBtwItems,),
         Container(
           decoration: BoxDecoration(
-            border: Border.all(color: Palette.grey),
+            border: Border.all(color: CarterPalette.grey),
             borderRadius: BorderRadius.circular(100),
           ),
           child: IconButton(
@@ -36,7 +36,7 @@ class FooterIcons extends StatelessWidget {
             icon: const Image(
                 width: CarterSizes.iconMd,
                 height: CarterSizes.iconMd,
-                image: AssetImage(EMages.facebook)),
+                image: AssetImage(CarterImg.facebook)),
           ),
         ),
       ],

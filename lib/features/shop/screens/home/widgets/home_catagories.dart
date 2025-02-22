@@ -17,7 +17,7 @@ class CarterHomeCategories extends StatelessWidget {
           itemCount: 6,
           scrollDirection: Axis.horizontal,
           itemBuilder: (_, index) {
-            return EverticalImageText(image: EMages.sportIcon,title: 'Shoes',);
+            return EverticalImageText(image: CarterImg.sportIcon,title: 'Shoes',);
           }),
     );
   }

@@ -20,7 +20,7 @@ class ECartCounterIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark= EHelperFunctions.isDarkMode(context);
+    final dark= CarterHelperFunctions.isDarkMode(context);
     return Stack(
       children: [
         IconButton(onPressed: onPressed, icon:  Icon(Iconsax.shopping_bag,color: iconColor,)),
@@ -30,11 +30,11 @@ class ECartCounterIcon extends StatelessWidget {
             width: 18,height: 18,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(100),
-              color: dark? Palette.white:Palette.dark,
+              color: dark? CarterPalette.white:CarterPalette.dark,
             ),
             child: Center(
               child: Text('2',
-                style: Theme.of(context).textTheme.labelLarge!.apply(color:dark? Palette.dark:Palette.white,fontSizeFactor: 0.8),),
+                style: Theme.of(context).textTheme.labelLarge!.apply(color:dark? CarterPalette.dark:CarterPalette.white,fontSizeFactor: 0.8),),
             ),
           ),
         )

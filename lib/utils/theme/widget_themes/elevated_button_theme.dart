@@ -11,13 +11,13 @@ class CarterElevatedButtonTheme {
   static final lightElevatedButtonTheme  = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Palette.light,
-      backgroundColor: Palette.primary,
-      disabledForegroundColor: Palette.darkGrey,
-      disabledBackgroundColor: Palette.buttonDisabled,
-      side: const BorderSide(color: Palette.primary),
+      foregroundColor: CarterPalette.light,
+      backgroundColor: CarterPalette.primary,
+      disabledForegroundColor: CarterPalette.darkGrey,
+      disabledBackgroundColor: CarterPalette.buttonDisabled,
+      side: const BorderSide(color: CarterPalette.primary),
       padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight),
-      textStyle: const TextStyle(fontSize: 16, color: Palette.textWhite, fontWeight: FontWeight.w600),
+      textStyle: const TextStyle(fontSize: 16, color: CarterPalette.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),
   );
@@ -26,13 +26,13 @@ class CarterElevatedButtonTheme {
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: Palette.light,
-      backgroundColor: Palette.primary,
-      disabledForegroundColor: Palette.darkGrey,
-      disabledBackgroundColor: Palette.darkerGrey,
-      side: const BorderSide(color: Palette.primary),
+      foregroundColor: CarterPalette.light,
+      backgroundColor: CarterPalette.primary,
+      disabledForegroundColor: CarterPalette.darkGrey,
+      disabledBackgroundColor: CarterPalette.darkerGrey,
+      side: const BorderSide(color: CarterPalette.primary),
       padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight),
-      textStyle: const TextStyle(fontSize: 16, color: Palette.textWhite, fontWeight: FontWeight.w600),
+      textStyle: const TextStyle(fontSize: 16, color: CarterPalette.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),
   );

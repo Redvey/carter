@@ -1,8 +1,8 @@
 /// Exception class for handling various platform-related errors.
-class EPlatformException implements Exception {
+class CarterPlatformException implements Exception {
   final String code;
 
-  EPlatformException(this.code);
+  CarterPlatformException(this.code);
 
   String get message {
     switch (code) {

@@ -16,7 +16,7 @@ class ETopHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return CurvedEdgesWidget(
       child: Container(
-        color: Palette.primary,
+        color: CarterPalette.primary,
         padding: const EdgeInsets.all(0),
         child: SizedBox(
           height: 400,
@@ -26,7 +26,7 @@ class ETopHeader extends StatelessWidget {
                 top: -150,
                 right: -250,
                 child: CircularCont(
-                  backgroundColor: Palette.textWhite.withOpacity(0.1),
+                  backgroundColor: CarterPalette.textWhite.withOpacity(0.1),
                   padding: EdgeInsets.zero,
                   radius: 400,
 
@@ -36,7 +36,7 @@ class ETopHeader extends StatelessWidget {
                 top: 100,
                 right: -300,
                 child: CircularCont(
-                  backgroundColor: Palette.textWhite.withOpacity(0.1),
+                  backgroundColor: CarterPalette.textWhite.withOpacity(0.1),
                   padding: EdgeInsets.zero,
                   radius: 400,
                 ),

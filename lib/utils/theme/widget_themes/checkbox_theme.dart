@@ -11,14 +11,14 @@ class CarterCheckboxTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.xs)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Palette.white;
+        return CarterPalette.white;
       } else {
-        return Palette.black;
+        return CarterPalette.black;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Palette.primary;
+        return CarterPalette.primary;
       } else {
         return Colors.transparent;
       }
@@ -30,14 +30,14 @@ class CarterCheckboxTheme {
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.xs)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Palette.white;
+        return CarterPalette.white;
       } else {
-        return Palette.black;
+        return CarterPalette.black;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return Palette.primary;
+        return CarterPalette.primary;
       } else {
         return Colors.transparent;
       }
