@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class EAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const EAppBar(
+class CarterAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const CarterAppBar(
       {super.key,
       this.title,
       this.showBackArrow=false,
@@ -22,7 +22,7 @@ class EAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: TSizes.md),
+      padding: EdgeInsets.symmetric(horizontal: CarterSizes.md),
       child: AppBar(
           automaticallyImplyLeading: false,
           leading: showBackArrow

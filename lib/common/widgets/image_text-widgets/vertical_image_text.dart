@@ -27,14 +27,14 @@ class EverticalImageText extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding: const EdgeInsets.only(right: TSizes.spaceBtwItems),
+        padding: const EdgeInsets.only(right: CarterSizes.spaceBtwItems),
         child: Column(
           children: [
             ///circular icon
             Container(
               width: 56,
               height: 56,
-              padding: const EdgeInsets.all(TSizes.sm),
+              padding: const EdgeInsets.all(CarterSizes.sm),
               decoration: BoxDecoration(
                 color: backgroundColor ?? (dark ? Palette.black:Palette.white),
                 borderRadius: BorderRadius.circular(100),
@@ -48,7 +48,7 @@ class EverticalImageText extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: TSizes.spaceBtwItems / 2,
+              height: CarterSizes.spaceBtwItems / 2,
             ),
 
             ///text

@@ -22,8 +22,8 @@ class EGridLayout extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: TSizes.gridViewSpacing,
-          crossAxisSpacing: TSizes.gridViewSpacing,
+          mainAxisSpacing: CarterSizes.gridViewSpacing,
+          crossAxisSpacing: CarterSizes.gridViewSpacing,
           mainAxisExtent: mainAxisExtent),
       itemBuilder: itemBuilder,
     );

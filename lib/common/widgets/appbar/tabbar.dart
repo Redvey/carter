@@ -4,8 +4,8 @@ import 'package:carter/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 
-class ETabBar extends StatelessWidget implements PreferredSizeWidget{
-  const ETabBar({
+class CarterTabBar extends StatelessWidget implements PreferredSizeWidget{
+  const CarterTabBar({
     super.key, required this.tabs,
   });
 

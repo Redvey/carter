@@ -14,7 +14,7 @@ class ESearchBox extends StatelessWidget {
     this.showBackgroundColor=true,
     this.showBorder=true,
     this.onTap,
-    this.padding=const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace),
+    this.padding=const EdgeInsets.symmetric(horizontal: CarterSizes.defaultSpace),
   });
 
   final String text;
@@ -33,10 +33,10 @@ class ESearchBox extends StatelessWidget {
         padding: padding,
         child: Container(
           width: EDeviceUtils.getScreenWidth(context),
-          padding: const EdgeInsets.all(TSizes.md),
+          padding: const EdgeInsets.all(CarterSizes.md),
           decoration: BoxDecoration(
               color: showBackgroundColor?dark? Palette.dark:Palette.light:Colors.transparent,
-              borderRadius: BorderRadius.circular(TSizes.cardRadiusLg),
+              borderRadius: BorderRadius.circular(CarterSizes.cardRadiusLg),
               border: showBorder? Border.all(color: Palette.grey):null),
           child: Row(
             children: [
@@ -45,7 +45,7 @@ class ESearchBox extends StatelessWidget {
                 color: Palette.darkGrey,
               ),
               const SizedBox(
-                width: TSizes.spaceBtwItems,
+                width: CarterSizes.spaceBtwItems,
               ),
               Text(
                 text,

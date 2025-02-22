@@ -37,12 +37,12 @@ class EBrandTitleWithVerifiedIcon extends StatelessWidget {
           ),
         ),
         SizedBox(
-          width: TSizes.iconXs,
+          width: CarterSizes.iconXs,
         ),
         Icon(
           Iconsax.verify5,
           color: Palette.primary,
-          size: TSizes.iconXs,
+          size: CarterSizes.iconXs,
         )
       ],
     );

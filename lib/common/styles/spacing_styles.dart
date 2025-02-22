@@ -1,11 +1,11 @@
 import 'package:carter/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 
-class ESpacingStyle{
+class CarterSpacingStyle{
   static const EdgeInsetsGeometry paddingWithAppBarHeight=EdgeInsets.only(
-    top: TSizes.appBarHeight,
-    bottom: TSizes.defaultSpace,
-    left: TSizes.defaultSpace,
-    right: TSizes.defaultSpace,
+    top: CarterSizes.appBarHeight,
+    bottom: CarterSizes.defaultSpace,
+    left: CarterSizes.defaultSpace,
+    right: CarterSizes.defaultSpace,
   );
 }

@@ -34,7 +34,7 @@ class CarterPromoSilder extends StatelessWidget {
           // ],
           items: banners.map((url)=>  ERoundedImage(imageUrl: url)).toList(),
         ),
-        SizedBox(height: TSizes.spaceBtwItems,),
+        SizedBox(height: CarterSizes.spaceBtwItems,),
         Center(
           child: Obx(
             ()=> Row(

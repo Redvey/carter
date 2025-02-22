@@ -19,8 +19,8 @@ class EBrandShowCase extends StatelessWidget {
       backgroundColor: Colors.transparent,
       borderColor: Palette.darkGrey,
       margin:
-      const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
-      padding: const EdgeInsets.all(TSizes.md),
+      const EdgeInsets.only(bottom: CarterSizes.spaceBtwItems),
+      padding: const EdgeInsets.all(CarterSizes.md),
       child: Column(
         children: [
           ///Brand with procut count
@@ -48,8 +48,8 @@ class EBrandShowCase extends StatelessWidget {
             ? Palette.darkGrey
             : Palette.light,
         margin:
-        const EdgeInsets.only(right: TSizes.sm),
-        padding: const EdgeInsets.all(TSizes.md),
+        const EdgeInsets.only(right: CarterSizes.sm),
+        padding: const EdgeInsets.all(CarterSizes.md),
         child:  Image(
           image: AssetImage(image),
           fit: BoxFit.contain,

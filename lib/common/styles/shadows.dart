@@ -2,7 +2,7 @@ import 'package:carter/utils/constants/palette.dart';
 import 'package:flutter/material.dart';
 
 
-class EShadowStyle{
+class CarterShadowStyle{
   static final verticalProductShadow =BoxShadow(
     color: Palette.darkGrey.withOpacity(0.1),
     blurRadius: 50,

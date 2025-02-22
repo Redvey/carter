@@ -19,7 +19,7 @@ class ERoundedImage extends StatelessWidget {
     this.fit=BoxFit.contain,
     this.padding,
     this.onPressed,
-    this.borderRadius= TSizes.md,
+    this.borderRadius= CarterSizes.md,
   });
 
   final double? width, height;

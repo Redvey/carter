@@ -13,7 +13,7 @@ class ECircularImage extends StatelessWidget {
     this.backgroundColor,
     this.width = 56,
     this.height = 56,
-    this.padding = TSizes.sm,
+    this.padding = CarterSizes.sm,
   });
 
   final BoxFit? fit;

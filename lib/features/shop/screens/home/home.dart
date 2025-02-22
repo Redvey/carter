@@ -27,7 +27,7 @@ class AppHome extends StatelessWidget {
                 ///AppBar
                 CarterHomeAppBar(),
                 const SizedBox(
-                  height: TSizes.spaceBtwSections,
+                  height: CarterSizes.spaceBtwSections,
                 ),
 
                 ///SearchBar
@@ -36,12 +36,12 @@ class AppHome extends StatelessWidget {
                   icon: Iconsax.search_normal,
                 ),
                 const SizedBox(
-                  height: TSizes.spaceBtwSections,
+                  height: CarterSizes.spaceBtwSections,
                 ),
 
                 ///Categories carousel
                 Padding(
-                  padding: EdgeInsets.only(left: TSizes.defaultSpace),
+                  padding: EdgeInsets.only(left: CarterSizes.defaultSpace),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -51,7 +51,7 @@ class AppHome extends StatelessWidget {
                         textColor: Palette.white,
                       ),
                       const SizedBox(
-                        height: TSizes.spaceBtwItems,
+                        height: CarterSizes.spaceBtwItems,
                       ),
 
                       ///Categories
@@ -62,7 +62,7 @@ class AppHome extends StatelessWidget {
               ],
             )),
             Padding(
-              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(CarterSizes.defaultSpace),
               child: Column(
                 children: [
                   ///PromoSlider
@@ -74,20 +74,20 @@ class AppHome extends StatelessWidget {
                     ],
                   ),
                   SizedBox(
-                    height: TSizes.spaceBtwSections,
+                    height: CarterSizes.spaceBtwSections,
                   ),
                   ESectionHeading(
                     title: 'Popular Categories',
                     onPressed: (){},
                   ),
                   SizedBox(
-                    height: TSizes.spaceBtwItems,
+                    height: CarterSizes.spaceBtwItems,
                   ),
 
                   ///product grids
                   EGridLayout(
                     itemCount: 2,
-                    itemBuilder: (_, index)=> const EProductCardVertical(),
+                    itemBuilder: (_, index)=> const CarterProductCardVertical(),
                   ),
 
                 ],

@@ -20,12 +20,12 @@ class FooterIcons extends StatelessWidget {
           child: IconButton(
             onPressed: (){},
             icon: const Image(
-                width: TSizes.iconMd,
-                height: TSizes.iconMd,
+                width: CarterSizes.iconMd,
+                height: CarterSizes.iconMd,
                 image: AssetImage(EMages.google)),
           ),
         ),
-        const SizedBox(width: TSizes.spaceBtwItems,),
+        const SizedBox(width: CarterSizes.spaceBtwItems,),
         Container(
           decoration: BoxDecoration(
             border: Border.all(color: Palette.grey),
@@ -34,8 +34,8 @@ class FooterIcons extends StatelessWidget {
           child: IconButton(
             onPressed: (){},
             icon: const Image(
-                width: TSizes.iconMd,
-                height: TSizes.iconMd,
+                width: CarterSizes.iconMd,
+                height: CarterSizes.iconMd,
                 image: AssetImage(EMages.facebook)),
           ),
         ),

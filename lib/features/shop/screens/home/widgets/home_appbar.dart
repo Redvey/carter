@@ -12,7 +12,7 @@ class CarterHomeAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return EAppBar(
+    return CarterAppBar(
       title: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

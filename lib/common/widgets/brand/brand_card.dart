@@ -22,7 +22,7 @@ class EBrandCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {},
       child: CircularCont(
-        padding: const EdgeInsets.all(TSizes.sm),
+        padding: const EdgeInsets.all(CarterSizes.sm),
         showBorder: showBorder,
         backgroundColor: Colors.transparent,
         child: Row(
@@ -39,7 +39,7 @@ class EBrandCard extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              width: TSizes.spaceBtwItems / 2,
+              width: CarterSizes.spaceBtwItems / 2,
             ),
 
             ///--Text

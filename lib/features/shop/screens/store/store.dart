@@ -19,7 +19,7 @@ class AppStore extends StatelessWidget {
     return DefaultTabController(
       length: 6,
       child: Scaffold(
-        appBar: EAppBar(
+        appBar: CarterAppBar(
           title: Text(
             'Store',
             style: Theme.of(context).textTheme.headlineMedium,
@@ -42,14 +42,14 @@ class AppStore extends StatelessWidget {
                   expandedHeight: 440,
                   automaticallyImplyLeading: false,
                   flexibleSpace: Padding(
-                    padding: EdgeInsets.all(TSizes.defaultSpace),
+                    padding: EdgeInsets.all(CarterSizes.defaultSpace),
                     child: ListView(
                       shrinkWrap: true,
                       physics: NeverScrollableScrollPhysics(),
                       children: [
                         ///searchbox
                         SizedBox(
-                          height: TSizes.spaceBtwItems,
+                          height: CarterSizes.spaceBtwItems,
                         ),
                         ESearchBox(
                           text: 'Search in Store',
@@ -58,7 +58,7 @@ class AppStore extends StatelessWidget {
                           padding: EdgeInsets.zero,
                         ),
                         SizedBox(
-                          height: TSizes.spaceBtwSections,
+                          height: CarterSizes.spaceBtwSections,
                         ),
 
                         ///Featured Headings
@@ -67,7 +67,7 @@ class AppStore extends StatelessWidget {
                           onPressed: () {},
                         ),
                         SizedBox(
-                          height: TSizes.spaceBtwItems / 1.5,
+                          height: CarterSizes.spaceBtwItems / 1.5,
                         ),
                         EGridLayout(
                             itemCount: 4,
@@ -80,7 +80,7 @@ class AppStore extends StatelessWidget {
                   ),
 
                   ///Tabs
-                  bottom: const ETabBar(
+                  bottom: const CarterTabBar(
                     tabs: [
                       Tab(
                         child: Text("Sports"),

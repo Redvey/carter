@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../constants/palette.dart';
 import '../../constants/sizes.dart';
 
-class TAppBarTheme{
-  TAppBarTheme._();
+class CarterAppBarTheme{
+  CarterAppBarTheme._();
 
   static const lightAppBarTheme = AppBarTheme(
     elevation: 0,
@@ -12,8 +12,8 @@ class TAppBarTheme{
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Palette.black, size: TSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: Palette.black, size: TSizes.iconMd),
+    iconTheme: IconThemeData(color: Palette.black, size: CarterSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: Palette.black, size: CarterSizes.iconMd),
     titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: Palette.black),
   );
   static const darkAppBarTheme = AppBarTheme(
@@ -22,8 +22,8 @@ class TAppBarTheme{
     scrolledUnderElevation: 0,
     backgroundColor: Colors.transparent,
     surfaceTintColor: Colors.transparent,
-    iconTheme: IconThemeData(color: Palette.black, size: TSizes.iconMd),
-    actionsIconTheme: IconThemeData(color: Palette.white, size: TSizes.iconMd),
+    iconTheme: IconThemeData(color: Palette.black, size: CarterSizes.iconMd),
+    actionsIconTheme: IconThemeData(color: Palette.white, size: CarterSizes.iconMd),
     titleTextStyle: TextStyle(fontSize: 18.0, fontWeight: FontWeight.w600, color: Palette.white),
   );
 }

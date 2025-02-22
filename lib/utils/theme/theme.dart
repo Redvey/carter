@@ -11,8 +11,8 @@ import 'package:flutter/material.dart';
 
 import '../constants/palette.dart';
 
-class TAppTheme {
-  TAppTheme._();
+class AppTheme {
+  AppTheme._();
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
@@ -20,15 +20,15 @@ class TAppTheme {
     disabledColor: Palette.grey,
     brightness: Brightness.light,
     primaryColor: Palette.primary,
-    textTheme: TTextTheme.lightTextTheme,
-    chipTheme: TChipTheme.lightChipTheme,
+    textTheme: CarterTextTheme.lightTextTheme,
+    chipTheme: CarterChipTheme.lightChipTheme,
     scaffoldBackgroundColor: Palette.white,
-    appBarTheme: TAppBarTheme.lightAppBarTheme,
-    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
-    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
-    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
+    appBarTheme: CarterAppBarTheme.lightAppBarTheme,
+    checkboxTheme: CarterCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: CarterBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: CarterElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: CarterOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: CarterTextFormFieldTheme.lightInputDecorationTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
@@ -37,14 +37,14 @@ class TAppTheme {
     disabledColor: Palette.grey,
     brightness: Brightness.dark,
     primaryColor: Palette.primary,
-    textTheme: TTextTheme.darkTextTheme,
-    chipTheme: TChipTheme.darkChipTheme,
+    textTheme: CarterTextTheme.darkTextTheme,
+    chipTheme: CarterChipTheme.darkChipTheme,
     scaffoldBackgroundColor: Palette.black,
-    appBarTheme: TAppBarTheme.darkAppBarTheme,
-    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
-    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
+    appBarTheme: CarterAppBarTheme.darkAppBarTheme,
+    checkboxTheme: CarterCheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme: CarterBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: CarterElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: CarterOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: CarterTextFormFieldTheme.darkInputDecorationTheme,
   );
 }

@@ -20,7 +20,7 @@ class SuccessScreen extends StatelessWidget {
     return Scaffold(
       body: SingleChildScrollView(
         child: Padding(
-          padding: ESpacingStyle.paddingWithAppBarHeight * 2,
+          padding: CarterSpacingStyle.paddingWithAppBarHeight * 2,
           child: Column(
             children: [
               ///Image
@@ -31,7 +31,7 @@ class SuccessScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: CarterSizes.spaceBtwSections,
               ),
 
               ///Title Subtitle
@@ -41,7 +41,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: TSizes.spaceBtwItems,
+                height: CarterSizes.spaceBtwItems,
               ),
               Text(
                 subtitle,
@@ -49,7 +49,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(
-                height: TSizes.spaceBtwSections,
+                height: CarterSizes.spaceBtwSections,
               ),
 
               ///Buttons

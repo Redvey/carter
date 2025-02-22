@@ -3,8 +3,8 @@ import '../../constants/palette.dart';
 import '../../constants/sizes.dart';
 
 /* -- Light & Dark Elevated Button Themes -- */
-class TElevatedButtonTheme {
-  TElevatedButtonTheme._(); //To avoid creating instances
+class CarterElevatedButtonTheme {
+  CarterElevatedButtonTheme._(); //To avoid creating instances
 
 
   /* -- Light Theme -- */
@@ -16,9 +16,9 @@ class TElevatedButtonTheme {
       disabledForegroundColor: Palette.darkGrey,
       disabledBackgroundColor: Palette.buttonDisabled,
       side: const BorderSide(color: Palette.primary),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
+      padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight),
       textStyle: const TextStyle(fontSize: 16, color: Palette.textWhite, fontWeight: FontWeight.w600),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),
   );
 
@@ -31,9 +31,9 @@ class TElevatedButtonTheme {
       disabledForegroundColor: Palette.darkGrey,
       disabledBackgroundColor: Palette.darkerGrey,
       side: const BorderSide(color: Palette.primary),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
+      padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight),
       textStyle: const TextStyle(fontSize: 16, color: Palette.textWhite, fontWeight: FontWeight.w600),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),
   );
 }

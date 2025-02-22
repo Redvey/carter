@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../../constants/palette.dart';
 
 /// Custom Class for Light & Dark Text Themes
-class TTextTheme {
-  TTextTheme._(); // To avoid creating instances
+class CarterTextTheme {
+  CarterTextTheme._(); // To avoid creating instances
 
   /// Customizable Light Text Theme
   static TextTheme lightTextTheme = TextTheme(

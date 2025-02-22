@@ -13,8 +13,8 @@ import 'package:iconsax/iconsax.dart';
 
 import '../widgets/texts/product_title_texts.dart';
 
-class EProductCardVertical extends StatelessWidget {
-  const EProductCardVertical({super.key});
+class CarterProductCardVertical extends StatelessWidget {
+  const CarterProductCardVertical({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,8 +25,8 @@ class EProductCardVertical extends StatelessWidget {
         width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
-          boxShadow: [EShadowStyle.verticalProductShadow],
-          borderRadius: BorderRadius.circular(TSizes.productImageRadius),
+          boxShadow: [CarterShadowStyle.verticalProductShadow],
+          borderRadius: BorderRadius.circular(CarterSizes.productImageRadius),
           color: dark ? Palette.darkerGrey : Palette.white,
         ),
         child: Column(
@@ -34,7 +34,7 @@ class EProductCardVertical extends StatelessWidget {
             ///Thumbnail,wishlist Button,discount tag
             CircularCont(
               height: 180,
-              padding: const EdgeInsets.all(TSizes.sm),
+              padding: const EdgeInsets.all(CarterSizes.sm),
               backgroundColor: dark ? Palette.dark : Palette.light,
               child: Stack(
                 children: [
@@ -48,10 +48,10 @@ class EProductCardVertical extends StatelessWidget {
                   Positioned(
                     top: 12,
                     child: CircularCont(
-                      radius: TSizes.sm,
+                      radius: CarterSizes.sm,
                       backgroundColor: Palette.secondary.withValues(alpha: 0.8),
                       padding: const EdgeInsets.symmetric(
-                          horizontal: TSizes.sm, vertical: TSizes.xs),
+                          horizontal: CarterSizes.sm, vertical: CarterSizes.xs),
                       child: Text(
                         '25%',
                         style: Theme.of(context)
@@ -74,12 +74,12 @@ class EProductCardVertical extends StatelessWidget {
               ),
             ),
              SizedBox(
-              height: TSizes.spaceBtwItems / 2,
+              height: CarterSizes.spaceBtwItems / 2,
             ),
 
             ///Details
             Padding(
-                padding: const EdgeInsets.only(left: TSizes.sm),
+                padding: const EdgeInsets.only(left: CarterSizes.sm),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -88,7 +88,7 @@ class EProductCardVertical extends StatelessWidget {
                       smallSize: true,
                     ),
                     SizedBox(
-                      height: TSizes.spaceBtwItems / 2,
+                      height: CarterSizes.spaceBtwItems / 2,
                     ),
                     EBrandTitleWithVerifiedIcon(title: "Nike",),
                     // add spacer to keep height of each box same in case 1 or 2 lines of heading
@@ -102,19 +102,19 @@ class EProductCardVertical extends StatelessWidget {
               children: [
                 ///Price
                 Padding(
-                  padding: const EdgeInsets.only(left: TSizes.sm),
+                  padding: const EdgeInsets.only(left: CarterSizes.sm),
                   child: EProductPriceText(price: '35',),
                 ),
                 Container(
                   decoration: BoxDecoration(
                       color: Palette.dark,
                       borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(TSizes.cardRadiusMd),
+                          topLeft: Radius.circular(CarterSizes.cardRadiusMd),
                           bottomRight: Radius.circular(
-                              TSizes.productImageRadius))),
+                              CarterSizes.productImageRadius))),
                   child: SizedBox(
-                      width: TSizes.iconLg * 1.2,
-                      height: TSizes.iconLg * 1.2,
+                      width: CarterSizes.iconLg * 1.2,
+                      height: CarterSizes.iconLg * 1.2,
                       child: Center(
                           child: const Icon(
                             Iconsax.add,

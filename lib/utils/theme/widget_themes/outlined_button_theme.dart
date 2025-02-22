@@ -4,8 +4,8 @@ import '../../constants/palette.dart';
 import '../../constants/sizes.dart';
 
 /* -- Light & Dark Outlined Button Themes -- */
-class TOutlinedButtonTheme {
-  TOutlinedButtonTheme._(); //To avoid creating instances
+class CarterOutlinedButtonTheme {
+  CarterOutlinedButtonTheme._(); //To avoid creating instances
 
 
   /* -- Light Theme -- */
@@ -15,8 +15,8 @@ class TOutlinedButtonTheme {
       foregroundColor: Palette.dark,
       side: const BorderSide(color: Palette.borderPrimary),
       textStyle: const TextStyle(fontSize: 16, color: Palette.black, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),
   );
 
@@ -26,8 +26,8 @@ class TOutlinedButtonTheme {
       foregroundColor: Palette.light,
       side: const BorderSide(color: Palette.borderPrimary),
       textStyle: const TextStyle(fontSize: 16, color: Palette.textWhite, fontWeight: FontWeight.w600),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight, horizontal: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+      padding: const EdgeInsets.symmetric(vertical: CarterSizes.buttonHeight, horizontal: 20),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(CarterSizes.buttonRadius)),
     ),
   );
 }

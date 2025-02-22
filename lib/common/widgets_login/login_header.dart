@@ -27,7 +27,7 @@ class LogoTitleSection extends StatelessWidget {
           style: Theme.of(context).textTheme.headlineMedium,
         ),
         const SizedBox(
-          height: TSizes.sm,
+          height: CarterSizes.sm,
         ),
         Text(
           ETexts.loginSubTitle,

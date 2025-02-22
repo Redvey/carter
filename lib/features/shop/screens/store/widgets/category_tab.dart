@@ -18,7 +18,7 @@ class ECategoryTab extends StatelessWidget {
       physics: const NeverScrollableScrollPhysics(),
       children: [
         Padding(
-          padding: const EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(CarterSizes.defaultSpace),
           child: Column(
             children: [
               ///Brands
@@ -32,13 +32,13 @@ class ECategoryTab extends StatelessWidget {
                 EMages.productImage2,
                 EMages.productImage3,
               ],),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: CarterSizes.spaceBtwItems,),
 
               ///Products
               ESectionHeading(title: 'You might like',showActionButton: true,onPressed: (){},),
-              const SizedBox(height: TSizes.spaceBtwItems,),
+              const SizedBox(height: CarterSizes.spaceBtwItems,),
 
-              EGridLayout(itemCount: 4, itemBuilder: (_,index)=> const EProductCardVertical())
+              EGridLayout(itemCount: 4, itemBuilder: (_,index)=> const CarterProductCardVertical())
             ],
           ),
         )

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class EProductCardHorizontal extends StatelessWidget {
-  const EProductCardHorizontal({super.key});
+class CarterProductCardHorizontal extends StatelessWidget {
+  const CarterProductCardHorizontal({super.key});
 
   @override
   Widget build(BuildContext context) {
