@@ -54,6 +54,8 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   capped_progress_indicator: ^0.0.2
   lottie: ^3.3.1
+  liquid_swipe: ^3.1.0
+  rive: ^0.13.20
 
 
 dev_dependencies:
@@ -95,6 +97,7 @@ flutter:
     - assets/images/animations/
     - assets/icons/payment_methods/
     - assets/images/on_boarding_images/
+    - assets/animations/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

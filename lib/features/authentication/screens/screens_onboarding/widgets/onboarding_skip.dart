@@ -1,3 +1,4 @@
+import 'package:carter/utils/constants/palette.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -17,6 +18,6 @@ class OnboardingSkipButton extends StatelessWidget {
         top: CarterDeviceUtils.getAppBarHeight(),
         right: CarterSizes.defaultSpace,
         child:
-        TextButton(onPressed: () {}, child: Text(CarterTexts.skip)));
+        TextButton(onPressed: () {}, child: Text(CarterTexts.skip,style: TextStyle(color: CarterPalette.onboardingSkip),)));
   }
 }

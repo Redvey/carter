@@ -3,7 +3,10 @@ import 'package:carter/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'features/authentication/controllers_onboarding/onboarding_controller.dart';
+
 void main() {
+  Get.put(OnBoardingController());
   runApp(const CarterApp());
 }
 
@@ -19,7 +22,7 @@ class CarterApp extends StatelessWidget {
 
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: OnboardingScreen()
+      home: OnBoardingScreen()
     );
   }
 }

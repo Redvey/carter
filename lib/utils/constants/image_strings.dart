@@ -152,6 +152,11 @@ class CarterImg{
   //Profile
   static const String user = "assets/images/content/user.png";
 
+  //Animations
+  static const String onboardingA = "assets/animations/cart.riv";
+  static const String onboardingB = "assets/animations/shoppingbasket.riv";
+  static const String onboardingC = "assets/animations/transaction.riv";
+
   // -- Payment Methods
   static const String applePay = "assets/icons/payment_methods/apple-pay.png";
   static const String googlePay = "assets/icons/payment_methods/google-pay.png";

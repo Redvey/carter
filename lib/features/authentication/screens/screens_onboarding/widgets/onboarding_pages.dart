@@ -1,9 +1,8 @@
+import 'package:carter/utils/constants/palette.dart';
 import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
 
 import '../../../../../utils/constants/sizes.dart';
-import '../../../../../utils/helpers/helper_functions.dart';
-
-
 
 class OnboardingPage extends StatelessWidget {
   const OnboardingPage({
@@ -11,20 +10,30 @@ class OnboardingPage extends StatelessWidget {
     required this.image,
     required this.title,
     required this.subtitle,
+    this.color = CarterPalette.onboarding, // Default color
+    this.gradient,
   });
 
   final String image, title, subtitle;
+  final Color color;
+  final Gradient? gradient; // Nullable
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(CarterSizes.defaultSpace),
+    return Container(
+      decoration: BoxDecoration(
+        color: gradient == null ? color : null, // Use color if no gradient
+        gradient: gradient, // If gradient is provided, it overrides color
+      ),
       child: Column(
         children: [
-          Image(
-            image: AssetImage(image),
-            width: CarterHelperFunctions.screenWidth() * 0.8,
-            height: CarterHelperFunctions.screenHeight() * 0.6,
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.8,
+            height: MediaQuery.of(context).size.height * 0.6,
+            child: RiveAnimation.asset(
+              image,
+              fit: BoxFit.contain,
+            ),
           ),
           Text(
             title,
@@ -44,6 +53,3 @@ class OnboardingPage extends StatelessWidget {
     );
   }
 }
-
-
-

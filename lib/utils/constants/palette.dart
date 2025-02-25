@@ -45,6 +45,47 @@ class CarterPalette {
   static const Color lightGrey = Color(0xFFF9F9F9);
   static const Color white = Color(0xFFFFFFFF);
 
+  //Onboarding shades
+  static const Color onboarding = Color(0xfffffbf7);
+
+  static const LinearGradient onboardingA = LinearGradient(
+    colors: [
+      Color(0xfffffbf7), // Light cream color
+      Color(0xfffffbf7), // Light green
+      Color(0xfffffbf7), // Light green
+      Color(0xffe1ebff), // Light green
+      Color(0xff56ab2f), // Darker green
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+  static const LinearGradient onboardingB = LinearGradient(
+    colors: [
+      Color(0xfffffbf7), // Light cream color
+      Color(0xfffffbf7), // Light green
+      Color(0xfffffbf7), // Light green
+      Color(0xffe1ebff), // Light green
+      Color(0xff332fab), // Darker green
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+  static const LinearGradient onboardingC = LinearGradient(
+    colors: [
+      Color(0xfffffbf7), // Light cream color
+      Color(0xfffffbf7), // Light green
+      Color(0xfffffbf7), // Light green
+      Color(0xffe1ebff), // Light green
+      Color(0xffa72fab), // Darker green
+    ],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+
+  static const Color onboardingSkip = Color(0xff0c2460);
+
+
+
 }
 
 
