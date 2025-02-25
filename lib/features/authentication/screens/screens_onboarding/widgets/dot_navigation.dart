@@ -21,6 +21,7 @@ class OnBoardingDotNavigation extends StatelessWidget {
     return Positioned(
         bottom: CarterDeviceUtils.getBottomNavigationBarHeight() + 25,
         left: CarterSizes.defaultSpace,
+        right: CarterSizes.defaultSpace,
         child: SmoothPageIndicator(
             controller: controller.pageController,
             onDotClicked: controller.dotNavigationClick,

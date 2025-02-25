@@ -10,45 +10,50 @@ class OnboardingPage extends StatelessWidget {
     required this.image,
     required this.title,
     required this.subtitle,
-    this.color = CarterPalette.onboarding, // Default color
-    this.gradient,
+    required this.gradient,
   });
 
   final String image, title, subtitle;
-  final Color color;
-  final Gradient? gradient; // Nullable
+  final Gradient gradient;
 
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: double.infinity,
+      width: double.infinity,
       decoration: BoxDecoration(
-        color: gradient == null ? color : null, // Use color if no gradient
-        gradient: gradient, // If gradient is provided, it overrides color
+        gradient: gradient,
       ),
-      child: Column(
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width * 0.8,
-            height: MediaQuery.of(context).size.height * 0.6,
-            child: RiveAnimation.asset(
-              image,
-              fit: BoxFit.contain,
+      child: Padding(
+        padding: const EdgeInsets.all(CarterSizes.defaultSpace),
+        child: Column(
+          children: [
+            SizedBox(
+              width: MediaQuery.of(context).size.width * 0.8,
+              height: MediaQuery.of(context).size.height * 0.6,
+              child: RiveAnimation.asset(
+                image,
+                fit: BoxFit.contain,
+              ),
             ),
-          ),
-          Text(
-            title,
-            style: Theme.of(context).textTheme.headlineMedium,
-            textAlign: TextAlign.center,
-          ),
-          const SizedBox(
-            height: CarterSizes.spaceBtwItems,
-          ),
-          Text(
-            subtitle,
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
-        ],
+            Text(
+              title,
+              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                color: CarterPalette.black),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(
+              height: CarterSizes.spaceBtwItems,
+            ),
+            Text(
+              subtitle,
+              style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+                color: CarterPalette.black, // Ensure color fits light theme
+              ),
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
       ),
     );
   }

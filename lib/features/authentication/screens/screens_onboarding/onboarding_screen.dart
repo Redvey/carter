@@ -1,5 +1,6 @@
 import 'package:carter/features/authentication/controllers_onboarding/onboarding_controller.dart';
 import 'package:carter/features/authentication/screens/screens_onboarding/widgets/dot_navigation.dart';
+import 'package:carter/features/authentication/screens/screens_onboarding/widgets/next_button.dart';
 import 'package:carter/features/authentication/screens/screens_onboarding/widgets/onboarding_pages.dart';
 import 'package:carter/features/authentication/screens/screens_onboarding/widgets/onboarding_skip.dart';
 import 'package:carter/utils/constants/image_strings.dart';
@@ -53,7 +54,7 @@ class OnBoardingScreen extends StatelessWidget {
           OnBoardingDotNavigation(),
 
           ///Circular Button
-          // OnBoardingNextButton()
+          OnBoardingNextButton(),
         ],
       ),
     );
