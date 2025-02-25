@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CarterPalette {
   // App theme colors
-  static const Color primary = Color(0xFFE61B32);
+  static const Color primary = Color(0xFF009688);
   static const Color next = Color(0xFFFAEBEC);
   static const Color bprimary = Color(0xFFE61B32);
   static const Color secondary = Color(0xFFFFE24B);

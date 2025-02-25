@@ -63,7 +63,7 @@ class CarterTexts {
 
   // -- Home
   static const String homeAppbarTitle = "Good day for shopping";
-  static const String homeAppbarSubTitle = "Kushal Rick Goswami";
+  static const String homeAppbarSubTitle = "Roopam Barman";
 
 
 }
