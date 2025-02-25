@@ -6,9 +6,6 @@ import 'package:carter/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
-
-
-
 class OnBoardingDotNavigation extends StatelessWidget {
   const OnBoardingDotNavigation({
     super.key,
@@ -16,19 +13,24 @@ class OnBoardingDotNavigation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark= CarterHelperFunctions.isDarkMode(context);
+    final dark = CarterHelperFunctions.isDarkMode(context);
     final controller = OnBoardingController.instance;
     return Positioned(
         bottom: CarterDeviceUtils.getBottomNavigationBarHeight() + 25,
-        left: CarterSizes.defaultSpace,
+
         right: CarterSizes.defaultSpace,
         child: SmoothPageIndicator(
             controller: controller.pageController,
             onDotClicked: controller.dotNavigationClick,
             count: 3,
-            effect: ExpandingDotsEffect(
-                activeDotColor: dark?CarterPalette.light:CarterPalette.dark, dotHeight:6
-            )
-        ));
+            effect: CustomizableEffect(
+                dotDecoration: DotDecoration(
+                  dotBorder: DotBorder(type: DotBorderType.values.last),
+                    borderRadius: BorderRadius.circular(2),
+                  rotationAngle: 45,
+                    color: dark ? CarterPalette.light : CarterPalette.dark),
+                activeDotDecoration: DotDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                    dotBorder: DotBorder(type: DotBorderType.solid,)))));
   }
 }
