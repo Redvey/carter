@@ -76,11 +76,11 @@ class CarterPalette {
       Color(0xfffffbf7), // Light cream color
       Color(0xfffffbf7), // Light green
       Color(0xfffffbf7), // Light green
-      Color(0xffe1ebff), // Light green
+      Color(0xfffcedff),
       Color(0xffa72fab), // Darker green
     ],
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
+    begin: Alignment.topCenter,
+    end: Alignment.bottomLeft,
   );
 
   static const Color onboardingSkip = Color(0xff0c2460);
