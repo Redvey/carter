@@ -5,8 +5,8 @@
 class CarterImg{
 
   // -- App Logos
-  static const String darkAppLogo = "assets/logos/Group 4.png";
-  static const String lightAppLogo = "assets/logos/Group 3.png";
+  static const String lightAppIcon = "assets/logos/brandLight.png";
+  static const String darkAppIcon = "assets/logos/brandDark.png";
 
   // -- Social Logos
   static const String google = "assets/logos/google-icon.png";

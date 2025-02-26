@@ -20,8 +20,8 @@ class LogoTitleSection extends StatelessWidget {
         Image(
             height: 150,
             image: dark
-                ? AssetImage(CarterImg.lightAppLogo)
-                : AssetImage(CarterImg.darkAppLogo)),
+                ? AssetImage(CarterImg.lightAppIcon)
+                : AssetImage(CarterImg.darkAppIcon)),
         Text(
           CarterTexts.loginTitle,
           style: Theme.of(context).textTheme.headlineMedium,
